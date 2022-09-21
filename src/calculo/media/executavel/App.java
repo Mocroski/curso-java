@@ -24,14 +24,9 @@ public class App {
 		aluno1.setNome(nome);
 		aluno1.setIdade(Integer.valueOf(idade));
 		aluno1.setDataNascimento(dataNascimento);
-		aluno1.getDisciplina().setDisciplina1(disciplina1);
-		aluno1.getDisciplina().setDisciplina1(disciplina2);
-		aluno1.getDisciplina().setDisciplina1(disciplina3);
-		aluno1.getDisciplina().setDisciplina1(disciplina4);
-		aluno1.getDisciplina().setNota1(Double.parseDouble(nota1));
-		aluno1.getDisciplina().setNota2(Double.parseDouble(nota2));
-		aluno1.getDisciplina().setNota3(Double.parseDouble(nota3));
-		aluno1.getDisciplina().setNota4(Double.parseDouble(nota4));
+		
+		
+		
 
 		
 		System.out.println(aluno1.toString());
