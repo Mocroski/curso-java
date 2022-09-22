@@ -112,10 +112,14 @@ public class Aluno {
 
 	public String getAlunoAprovado() {
 		double media = this.getMediaNota();
-		if (media >= 70) {
-			return this.getNome() + " Esta aprovado";
-		} else {
-			return this.getNome() + " Esta reprovado";
+		if (media >= 50) {
+			if (media >= 70) {
+				return " Esta aprovado";
+			} else {
+				return " Esta em recupeção";
+			}
+		}else {
+			return "esta reprovado";
 		}
 	}
 
@@ -124,7 +128,7 @@ public class Aluno {
 		return "Aluno [nome=" + nome + ", idade=" + idade + ", dataNascimento=" + dataNascimento + ", resgistroGeral="
 				+ resgistroGeral + ", numeroCpf=" + numeroCpf + ", nomeMae=" + nomeMae + ", nomePai=" + nomePai
 				+ ", dataMatricula=" + dataMatricula + ", nomeEscola=" + nomeEscola + ", serieMatriculado="
-				+ serieMatriculado  + "]";
+				+ serieMatriculado + ", disciplinas=" + disciplinas + "]";
 	}
 
 }
